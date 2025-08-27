@@ -1,0 +1,165 @@
+/* ============================= */
+/* Contenedor principal */
+/* ============================= */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff5733, #1d3557);
+  padding: 20px;
+}
+
+/* ============================= */
+/* Tarjeta del login */
+/* ============================= */
+.login-card {
+  background: #f1faee;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ============================= */
+/* Título */
+/* ============================= */
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1d3557;
+  font-weight: bold;
+}
+
+/* ============================= */
+/* Grupos de formulario */
+/* ============================= */
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1.5px solid #ccc;
+  border-radius: 0.8rem;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s;
+  background-color: #fff;
+}
+
+input:focus {
+  border-color: #ff5733;
+  box-shadow: 0 0 6px rgba(255, 87, 51, 0.4);
+}
+
+/* ============================= */
+/* Botón */
+/* ============================= */
+.btn {
+  width: 100%;
+  padding: 0.9rem;
+  background: linear-gradient(135deg, #ff5733, #e63946);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* ============================= */
+/* Loader */
+/* ============================= */
+.loader {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* ============================= */
+/* Error */
+/* ============================= */
+.error {
+  margin-top: 1rem;
+  color: #e63946;
+  text-align: center;
+}
+
+/* ============================= */
+/* Registro */
+/* ============================= */
+.register-text {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.register-text a {
+  color: #1d3557;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-text a:hover {
+  color: #ff5733;
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* Animaciones */
+/* ============================= */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================= */
+/* Responsivo */
+/* ============================= */
+@media (max-width: 500px) {
+  .login-card {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  input {
+    font-size: 0.95rem;
+  }
+}
